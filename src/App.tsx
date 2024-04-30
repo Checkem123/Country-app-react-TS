@@ -35,7 +35,10 @@ function App() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch("../../../../data.json");
+            // const res = await fetch("../../../../data.json");
+            const res = await fetch(
+                "https://123countryapp-ts.netlify.app/data.json"
+            );
             const data: CountriesProps[] = await res.json();
             setCountries(data);
             setOriginalCountries(data);
