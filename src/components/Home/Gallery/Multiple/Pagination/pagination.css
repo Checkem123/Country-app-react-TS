@@ -1,0 +1,21 @@
+.pagination {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.pagination li {
+    padding: 6px;
+    margin: 0 8px;
+    width: 2em;
+    text-align: center;
+    border-radius: 4px;
+    font-size: var(--fs-28);
+    background-color: var(--DarkMode-Elements);
+    box-shadow: 0.3px 0.3px 4px var(--LightMode-Text);
+}
+
+.pagination li.active {
+    background-color: #626e7a;
+}
