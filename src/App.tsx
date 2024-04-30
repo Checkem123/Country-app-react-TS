@@ -31,7 +31,7 @@ function App() {
         CountriesProps[] | null
     >(null);
 
-    const [darkmode, setDarkmode] = useState<boolean>(true);
+    const [darkmode, setDarkmode] = useState<boolean>(false);
 
     useEffect(() => {
         const fetchData = async () => {

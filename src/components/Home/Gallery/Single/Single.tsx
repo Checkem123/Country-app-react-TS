@@ -4,6 +4,9 @@ import { CountriesContext } from "../../../../App";
 
 const Single = () => {
     const { countries } = useContext(CountriesContext);
+    if (!countries) {
+        return;
+    }
     const item = countries.map((el) => (
         <Link className="link" to={`/country/${el.alpha3Code}`} key={el.name}>
             <div className="item">
