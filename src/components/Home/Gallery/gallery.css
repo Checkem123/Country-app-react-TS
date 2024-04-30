@@ -11,9 +11,9 @@
 }
 
 .item {
-    color: #f1f1f1;
-    box-shadow: 0.5px 0.5px 4px var(--LightMode-Text);
-    background-color: var(--DarkMode-Elements);
+    color: var(--white);
+    box-shadow: 0.5px 0.5px 4px var(--shadows);
+    background-color: var(--bg-dark);
 }
 
 .item img {
@@ -50,6 +50,7 @@
 
 .not-found h2 {
     font-size: var(--fs-32);
+    color: var(--white);
 }
 
 .loading {
@@ -60,6 +61,7 @@
 }
 .loading h2 {
     font-size: var(--fs-32);
+    color: var(--white);
 }
 
 @media (max-width: 820px) {

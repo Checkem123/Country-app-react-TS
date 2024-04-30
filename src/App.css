@@ -2,12 +2,12 @@
 
 :root {
     --font-Regular: "Nunito Sans", sans-serif;
-    --DarkMode-Elements: #2b3743;
-    --DarkMode-Bg: #202d36;
-    --LightMode-Text: hsl(200, 15%, 8%);
-    --LightMode-Input: hsl(0, 0%, 52%);
-    --LightMode-Bg: hsl(240, 3%, 78%);
-    --White-DM-Text-LM-Elements: hsl(0, 0%, 100%);
+
+    --active: #626e7a;
+    --bg-darker: #202d36;
+    --bg-dark: #2b3743;
+    --shadows: hsl(200, 15%, 8%);
+    --white: hsl(0, 0%, 100%);
 
     --fs-2: 0.125rem;
     --fs-4: 0.25rem;
@@ -46,11 +46,18 @@ html {
 body {
     background-color: #333;
     font-family: var(--font-Regular);
-    color: var(--White-DM-Text-LM-Elements);
+    color: var(--white);
 }
 
 .app {
     min-height: 100vh;
     height: auto;
-    background-color: #202d36;
+    background-color: var(--bg-darker);
+}
+
+.app.darkmode {
+    --bg-darker: hsl(0, 0%, 100%);
+    --bg-dark: hsl(0, 0%, 95%);
+    --white: hsl(200, 15%, 8%);
+    --active: #c8c8c8;
 }

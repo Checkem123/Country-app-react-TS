@@ -12,10 +12,11 @@
     text-align: center;
     border-radius: 4px;
     font-size: var(--fs-28);
-    background-color: var(--DarkMode-Elements);
-    box-shadow: 0.3px 0.3px 4px var(--LightMode-Text);
+    background-color: var(--bg-dark);
+    box-shadow: 0.3px 0.3px 4px var(--shadows);
+    color: var(--white);
 }
 
 .pagination li.active {
-    background-color: #626e7a;
+    background-color: var(--active);
 }

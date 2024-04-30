@@ -14,24 +14,26 @@
     font-size: var(--fs-24);
     padding: 8px 40px;
     margin-top: 80px;
-    background-color: var(--DarkMode-Elements);
-    color: var(--White-DM-Text-LM-Elements);
+    background-color: var(--bg-dark);
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0.5px 0.5px 8px var(--LightMode-Text);
+    box-shadow: 0.5px 0.5px 8px var(--shadows);
 }
 
 .middle-block {
     display: flex;
     align-items: center;
     margin-top: 80px;
+    color: var(--white);
 }
 
 .middle-block img {
     min-width: 520px;
     max-width: 520px;
     min-height: 360px;
+    box-shadow: 0.5px 0.5px 8px var(--shadows);
 }
 
 .infos {
@@ -82,12 +84,12 @@ span {
 
 .info-bottom li {
     list-style-type: none;
-    color: var(--White-DM-Text-LM-Elements);
+    color: var(--white);
     font-size: var(--fs-20);
     padding: 6px 24px;
     margin: 6px;
-    background-color: var(--DarkMode-Elements);
-    box-shadow: 0.5px 0.5px 4px var(--LightMode-Text);
+    background-color: var(--bg-dark);
+    box-shadow: 0.5px 0.5px 4px var(--shadows);
 }
 
 .loading {

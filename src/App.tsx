@@ -17,11 +17,21 @@ export const CountriesContext = createContext<{
     originalCountries: null,
 });
 
+export const DarkmodeContext = createContext<{
+    darkmode: boolean;
+    setDarkmode: Dispatch<React.SetStateAction<boolean>>;
+}>({
+    darkmode: true,
+    setDarkmode: () => {},
+});
+
 function App() {
     const [countries, setCountries] = useState<CountriesProps[] | null>(null);
     const [originalCountries, setOriginalCountries] = useState<
         CountriesProps[] | null
     >(null);
+
+    const [darkmode, setDarkmode] = useState<boolean>(true);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -34,8 +44,15 @@ function App() {
     }, []);
 
     return (
-        <div className="app">
-            <Header />
+        <div className={`app ${darkmode ? "" : "darkmode"}`}>
+            <DarkmodeContext.Provider
+                value={{
+                    darkmode,
+                    setDarkmode,
+                }}
+            >
+                <Header />
+            </DarkmodeContext.Provider>
             <Routes>
                 <Route
                     path="/"

@@ -4,19 +4,20 @@
 }
 
 .input-group {
-    background-color: var(--DarkMode-Elements);
+    background-color: var(--bg-dark);
     padding: var(--fs-16);
     margin: 40px 0;
     display: flex;
     align-items: center;
     border-radius: 4px;
-    box-shadow: 0.5px 0.5px 4px var(--LightMode-Text);
+    box-shadow: 0.5px 0.5px 4px var(--shadows);
 }
 
 .icon {
     display: flex;
     align-items: center;
     padding: 0 12px 0 24px;
+    color: var(--white);
 }
 
 .search-btn {
@@ -24,20 +25,20 @@
     padding: var(--fs-14);
     width: 28em;
     background-color: transparent;
-    color: #fff;
+    color: var(--white);
     border: none;
     outline: none;
 }
 
 .countries {
-    background-color: var(--DarkMode-Elements);
+    background-color: var(--bg-dark);
     font-size: var(--fs-24);
     padding-left: 20px;
     border: none;
     outline: none;
-    color: #fff;
+    color: var(--white);
     margin: 40px 0;
-    box-shadow: 0.5px 0.5px 4px var(--LightMode-Text);
+    box-shadow: 0.5px 0.5px 4px var(--shadows);
     width: 14em;
     border-right: 16px solid transparent;
 }

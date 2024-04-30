@@ -7,9 +7,14 @@ const Multiple = () => {
     const { countries } = useContext(CountriesContext);
     const [currentPage, setCurrentPage] = useState(1);
     const countriesPerPage = 8;
+
     useEffect(() => {
         setCurrentPage(1);
     }, [countries]);
+    
+    if (!countries) {
+        return;
+    }
     // Calculate the index range for the countries to display on the current page
     const indexOfLastCountry = currentPage * countriesPerPage;
     const indexOfFirstCountry = indexOfLastCountry - countriesPerPage;
