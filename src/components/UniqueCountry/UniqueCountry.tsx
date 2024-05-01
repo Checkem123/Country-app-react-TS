@@ -3,6 +3,7 @@ import { GoArrowLeft } from "react-icons/go";
 import { Link } from "react-router-dom";
 import "./uniquecountry.css";
 import { CountriesProps } from "../../types";
+import NotFound from "../NotFound/NotFound";
 
 interface UniqueCountryProps {
     countries: CountriesProps[] | null;
@@ -15,7 +16,7 @@ const Country = ({ countries }: UniqueCountryProps) => {
         marginRight: "6px",
         fontSize: "22px",
     };
-    
+
     if (!countries) {
         return (
             <div className="container">
@@ -35,7 +36,7 @@ const Country = ({ countries }: UniqueCountryProps) => {
     const targetCountry = countries.filter((el) => el.alpha3Code === name)[0];
 
     if (!targetCountry) {
-        return <div>problem</div>;
+        return <NotFound />;
     }
 
     return (

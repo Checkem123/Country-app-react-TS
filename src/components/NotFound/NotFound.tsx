@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
+import "./notfound.css";
 
 const NotFound = () => {
     const btnStyle = {
@@ -15,11 +16,12 @@ const NotFound = () => {
                     Back
                 </button>
             </Link>
-            <div className="loading">
-                <h2>
-                    I think you're lost, the data you're looking for is in
-                    another castle...
-                </h2>
+            <div className="loading-notfound">
+                <h2>404</h2>
+                <h3>Not Found</h3>
+                <h4>
+                    The resource requested could not be found on this server!
+                </h4>
             </div>
         </div>
     );

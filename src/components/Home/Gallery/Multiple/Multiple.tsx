@@ -11,7 +11,7 @@ const Multiple = () => {
     useEffect(() => {
         setCurrentPage(1);
     }, [countries]);
-    
+
     if (!countries) {
         return;
     }

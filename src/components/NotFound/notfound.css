@@ -1,0 +1,18 @@
+.loading-notfound {
+    text-align: center;
+    padding: 200px 0;
+    color: var(--white);
+}
+
+.loading-notfound h2 {
+    font-size: var(--fs-54);
+}
+
+.loading-notfound h3 {
+    font-size: var(--fs-46);
+}
+
+.loading-notfound h4 {
+    margin-top: 40px;
+    font-size: var(--fs-22);
+}
