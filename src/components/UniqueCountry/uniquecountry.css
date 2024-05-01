@@ -129,6 +129,13 @@ span {
 }
 
 @media screen and (max-width: 430px) {
+    .middle-block img {
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 180px;
+        max-height: 180px;
+    }
+
     .container {
         padding: 20px;
     }
