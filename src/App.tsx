@@ -31,6 +31,8 @@ function App() {
         CountriesProps[] | null
     >(null);
 
+    console.log(countries);
+
     const [darkmode, setDarkmode] = useState<boolean>(false);
 
     useEffect(() => {

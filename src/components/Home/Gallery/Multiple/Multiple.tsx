@@ -15,6 +15,7 @@ const Multiple = () => {
     if (!countries) {
         return;
     }
+
     // Calculate the index range for the countries to display on the current page
     const indexOfLastCountry = currentPage * countriesPerPage;
     const indexOfFirstCountry = indexOfLastCountry - countriesPerPage;
